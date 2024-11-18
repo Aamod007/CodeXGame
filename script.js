@@ -1,4 +1,4 @@
-        // Slider and Header JavaScript
+// Slider and Header JavaScript
         const header = document.querySelector('header');
         const header_title = document.getElementById('header_title');
         const d_btn1 = document.getElementById('d_btn1');
@@ -10,7 +10,8 @@
             simg: 'img/sliderimg2.jpg',
             timg: 'img/racecar.jpg'
         };
-
+          
+        
         const slider_load = (index) => {
             const images = [backimg.fimg, backimg.simg, backimg.timg];
             const titles = ["EGYPT AND WORLD", "RISE OF THE TOMB RAIDER", "HORIZON 4"];
@@ -90,7 +91,7 @@
             });
         });
 
-         // Smooth Scroll for Contact Link
+         // Smooth Scroll for esport Link
          document.querySelector('a[href="#esport]').addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector('#esport').scrollIntoView({
@@ -98,3 +99,13 @@
                 block: 'start'
             });
         });
+
+            // Smooth Scroll for Game Shop Link
+            document.querySelector('a[href="#gameshop"]').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('#gameshop').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+    
